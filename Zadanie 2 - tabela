@@ -34,7 +34,6 @@
     let suma = 0;
     TablicaNumery.forEach(element => {
         suma += element;
-        //tu liczby dodają się stopniowo, jak się wyrzuci console.log(suma) poza funkcję do się dodadzą odrazu
         console.log(suma);
      });
 
