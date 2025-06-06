@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="https://discord.com">Discord</a>
+        <a href="https://youtube.com">Youtube</a>
+        <a href="https://twitch.tv">Twitch</a>
+        <a href="https://www.youtube.com/watch?v=8ttTitMRR5U">Best momentos</a>
+    </header>
+    
+    <div id="form">
+        <img id="zdj" src="https://i0.wp.com/cdn.polscygracze.pl/uploads/2016/03/IEM_Katowice_1.jpg?w=900" width=60%>
+        <form>
+            <h1>formularz zgłoszeniowy na mistrzostwa E-sport w szkole TEB</h1><br>
+            <label>Imię</label>
+            <input type="text"><br>
+            <label>Nazwisko</label>
+            <input type="text"><br>
+            <label>Klasa</label>
+            <input type="text"><br>
+            <label>Wiek</label>
+            <input type="number"><br>
+            <label>Numer telefonu</label>
+            <input type="tel"><br>
+            <label>Zawód</label>
+            <select name="gry">
+                <option value="cs">cs</option>
+                <option value="valorant">valorant</option>
+                <option value="rodzinny">rodzinny</option>
+            </select><br>
+            <input type="submit" onclick="UserZapisany()">
+            <input type="reset" value="Wyczyść">
+        </form>
+    </div>
+    <footer>Dominik Skowron</footer>
+</body>
+<style>
+    body{
+        margin: 0px;
+    }
+    #form{
+        display: flex;
+        padding-top: 30px;
+    }
+    header, footer{
+        text-align: center;
+    }
+</style>
+<script>
+    function UserZapisany(){
+        alert("Pomyślnie zapisano!");
+        reset();
+    };
+</script>
+</html>
